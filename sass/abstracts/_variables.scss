@@ -1,5 +1,18 @@
-$color-grey: grey;
+//COLORS
+$color-grey: rgb(128, 128, 128);
+$color-grey-light: rgb(229, 235, 241);
 $color-white: rgb(245, 245, 245);
-$color-black: black;
+$color-black: rgb(0, 0, 0);
+$color-primary: rgb(82, 190, 128);
+$color-primary-light: rgb(169, 223, 191);
+$color-primary-dark: rgb(34, 153, 84);
 $color-secondary-light: rgba(116, 124, 106, 0.8);
 $color-secondary-dark: rgba(32, 45, 16, 0.7);
+
+//GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//FONT
+$default-font-size: 1.6rem;

@@ -18,5 +18,8 @@
   "homepage": "https://github.com/rhysbrame/twinPinesBrewingCo#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "@icon/linea-basic": "*"
   }
 }

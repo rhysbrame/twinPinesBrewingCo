@@ -71,7 +71,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.7));
+  background-image: linear-gradient(to right, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.702));
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.4s; }
@@ -82,7 +82,8 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: rgba(32, 45, 16, 0.702); }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -165,7 +166,9 @@ body {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    position: absolute; }
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -175,10 +178,32 @@ body {
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-1.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(245, 245, 245, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s; }
+  .feature-box__icon {
+    height: 5.2rem;
+    width: 5.2rem;
+    margin-bottom: 0.5rem;
+    filter: invert(26%) sepia(33%) saturate(1077%) hue-rotate(92deg) brightness(88%) contrast(99%); }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.7)), url(/img/brewery-images/brewery.jpg);
+  background-image: linear-gradient(to right bottom, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.702)), url(/img/brewery-images/brewery.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
@@ -228,4 +253,13 @@ body {
 .section-about {
   background-color: #e5ebf1;
   padding: 25rem 0;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  margin-bottom: 0; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.702)), url(/img/brewery-images/front.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -20rem; }

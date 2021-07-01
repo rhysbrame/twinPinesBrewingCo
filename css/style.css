@@ -201,11 +201,107 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all 0.9s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front-1 {
+      background-color: whitesmoke; }
+    .card__side--front-2 {
+      background-color: whitesmoke; }
+    .card__side--front-3 {
+      background-color: whitesmoke; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, whitesmoke, #d4ac0d); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, gray, black); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #a9cce3, #2471a3); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, whitesmoke, #d4ac0d), url(../../img/brewery-images/dipa.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, gray, black), url(../../img/brewery-images/stout.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #a9cce3, #2471a3), url(../../img/brewery-images/lager.jpg); }
+  .card .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: whitesmoke;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 50%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(245, 245, 245, 0.85), rgba(212, 172, 13, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.85), rgba(0, 0, 0, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(169, 204, 227, 0.85), rgba(36, 113, 163, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #e5ebf1; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    color: whitesmoke;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.702)), url(/img/brewery-images/brewery.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
@@ -257,9 +353,15 @@ body {
   margin-bottom: 0; }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 30rem 0 40rem 0;
   background-image: linear-gradient(to right bottom, rgba(116, 124, 106, 0.8), rgba(32, 45, 16, 0.702)), url(/img/brewery-images/front.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-  margin-top: -20rem; }
+  margin-top: -22rem; }
+
+.section-tours {
+  background-color: #e5ebf1;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  padding: 25rem 0 50rem 0;
+  margin-top: -30rem; }

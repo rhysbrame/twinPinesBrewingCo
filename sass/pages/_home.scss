@@ -38,4 +38,26 @@
     $color-primary-light,
     $color-primary-dark
   );
+
+  .book {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(/img/brewery-images/front.jpg);
+    background-size: 100%;
+    background-position: center;
+
+    border-radius: 5px;
+    box-shadow: 0rem 1.5rem 4rem rgba($color-black, $alpha: 0.35);
+
+    height: 70rem;
+
+    &__form {
+      width: 50%;
+      padding: 6rem;
+    }
+  }
 }

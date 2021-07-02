@@ -1,19 +1,25 @@
 //COLORS
-$color-grey: rgb(128, 128, 128);
-$color-grey-light: rgb(229, 235, 241);
 $color-white: rgb(245, 245, 245);
 $color-black: rgb(0, 0, 0);
+
+$color-grey: rgb(128, 128, 128);
+$color-grey-light: rgb(229, 235, 241);
+$color-grey-dark: rgb(82, 82, 82);
+
 $color-primary-light: rgb(169, 223, 191);
 $color-primary: rgb(82, 190, 128);
 $color-primary-dark: rgb(34, 153, 84);
-$color-yellow-light: rgb(247, 220, 111);
-$color-yellow-dark: rgb(212, 172, 13);
-$color-blue-light: rgb(169, 204, 227);
-$color-blue-dark: rgb(36, 113, 163);
 //default-icon-color
 $color-primary-darker: rgb(6, 82, 38);
+
 $color-secondary-light: rgba(116, 124, 106, 0.8);
 $color-secondary-dark: rgba(32, 45, 16, 0.702);
+
+$color-yellow-light: rgb(247, 220, 111);
+$color-yellow-dark: rgb(212, 172, 13);
+
+$color-blue-light: rgb(169, 204, 227);
+$color-blue-dark: rgb(36, 113, 163);
 
 //GRID
 $grid-width: 114rem;

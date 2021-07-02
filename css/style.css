@@ -312,7 +312,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.6);
   border-radius: 5px;
   padding: 6rem;
   padding-left: 9rem;
@@ -329,9 +329,16 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
   .story__img {
-    height: 100%; }
+    backface-visibility: hidden;
+    height: 100%;
+    transition: all 0.5s; }
+    .story__img--1 {
+      transform: translateX(-5rem); }
+    .story__img--2 {
+      transform: translateX(-6rem); }
   .story__text {
-    transform: skewX(12deg); }
+    transform: skewX(12deg);
+    color: black; }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -346,6 +353,21 @@ body {
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
@@ -418,5 +440,9 @@ body {
   margin-top: -32rem; }
 
 .section-stories {
-  background-color: #e5ebf1;
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #a9dfbf, #229954); }

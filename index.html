@@ -15,16 +15,46 @@
     <link
       rel="shortcut icon"
       type="image/svg"
-      href="/img/brewery-images/logo-black/tp_logo_black.svg"
+      href="img/brewery-images/Twin Pines Logo-gold.svg"
     />
 
     <title>Twin Pines Brewing Co.</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About Twin Pines<a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Beers<a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Shop<a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Community<a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Book Tour<a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img
-          src="/img/brewery-images/logo-white/2.svg"
+          src="/img/brewery-images/Twin Pines Logo-gold.svg"
           alt="Logo"
           class="header__logo"
         />
@@ -367,6 +397,37 @@
                   />
                   <label for="email" class="form__label">Email address</label>
                 </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+
+                <div class="from-group">
+                  <button class="btn btn--green">Next Step &rarr;</button>
+                </div>
               </form>
             </div>
           </div>
@@ -374,36 +435,47 @@
       </section>
     </main>
 
-    <!--
-    <section class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">Col 1 of 2</div>
-        <div class="col-1-of-2">Col 1 of 2</div>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="img/brewery-images/logo-full/Twin Pines Logo-white.svg#svgView(viewBox(80, 200, 1000, 700))"
+          alt="Full Logo"
+          class="footer__logo"
+        />
       </div>
       <div class="row">
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer_list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by
+            <a href="https://github.com/rhysbrame" class="footer__link">Me</a>
+            , credit and Thanks to
+            <a href="https://codingheroes.io/" class="footer__link"
+              >Jonas Schmedtmann</a
+            >
+          </p>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-2-of-3">Col 2 of 3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-2-of-4">Col 2 of 4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-3-of-4">Col 3 of 4</div>
-      </div>
-    </section>
-  --></body>
+    </footer>
+  </body>
 </html>

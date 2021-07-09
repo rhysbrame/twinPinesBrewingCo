@@ -20,6 +20,11 @@
     top: 6rem;
     left: 6rem;
     animation: fadeIn 1500ms ease-in;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      left: 3rem;
+    }
   }
 
   &__logo {

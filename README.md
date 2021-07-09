@@ -1,7 +1,13 @@
 # twinPinesBrewingCo
 
-HTML and CSS project
+Deployed on Heroku...
+
+https://vast-dawn-13865.herokuapp.com/
+
+HTML, SCSS and CSS project
 
 Using...
 
-SASS with the SCSS Preprocessor
+A small Express server to get started for deploying to Heroku
+
+\SASS with the SCSS Preprocessor

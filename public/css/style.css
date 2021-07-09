@@ -677,6 +677,10 @@ body {
     top: 6rem;
     left: 6rem;
     animation: fadeIn 1500ms ease-in; }
+    @media (max-width: 56.25em) {
+      .header__logo-box {
+        top: 3rem;
+        left: 3rem; } }
   .header__logo {
     height: 11rem; }
   .header__text-box {

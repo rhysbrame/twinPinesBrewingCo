@@ -12,10 +12,23 @@
   }
 
   &__icon {
-    height: $default-icon-size;
-    width: $default-icon-size;
-    margin-bottom: 0.5rem;
     filter: $default-icon-color;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 5rem;
+
+    &--world::before {
+      content: '\f14e';
+    }
+    &--compass::before {
+      content: '\f35a';
+    }
+    &--map::before {
+      content: '\f279';
+    }
+    &--heart::before {
+      content: '\f004';
+    }
   }
 
   &:hover {

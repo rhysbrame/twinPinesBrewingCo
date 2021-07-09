@@ -21,7 +21,7 @@
     "node-sass": "^6.0.1"
   },
   "dependencies": {
-    "@icon/linea-basic": "1.0.0-alpha.4",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "express": "^4.17.1"
   }
 }

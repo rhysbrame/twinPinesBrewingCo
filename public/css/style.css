@@ -280,10 +280,18 @@ body {
     .feature-box {
       padding: 1.5; } }
   .feature-box__icon {
-    height: 5.2rem;
-    width: 5.2rem;
-    margin-bottom: 0.5rem;
-    filter: invert(26%) sepia(33%) saturate(1077%) hue-rotate(92deg) brightness(88%) contrast(99%); }
+    filter: invert(26%) sepia(33%) saturate(1077%) hue-rotate(92deg) brightness(88%) contrast(99%);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 5rem; }
+    .feature-box__icon--world::before {
+      content: '\f14e'; }
+    .feature-box__icon--compass::before {
+      content: '\f35a'; }
+    .feature-box__icon--map::before {
+      content: '\f279'; }
+    .feature-box__icon--heart::before {
+      content: '\f004'; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 

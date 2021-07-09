@@ -683,6 +683,9 @@ body {
         left: 3rem; } }
   .header__logo {
     height: 11rem; }
+    @media (max-width: 56.25em) {
+      .header__logo {
+        height: 8rem; } }
   .header__text-box {
     position: absolute;
     top: 50%;

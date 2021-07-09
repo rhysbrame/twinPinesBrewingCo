@@ -29,6 +29,10 @@
 
   &__logo {
     height: 11rem;
+
+    @include respond(tab-port) {
+      height: 8rem;
+    }
   }
 
   &__text-box {
